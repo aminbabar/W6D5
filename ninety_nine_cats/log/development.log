@@ -1407,3 +1407,83 @@ Completed 200 OK in 379ms (Views: 368.0ms | ActiveRecord: 9.9ms)
   ↳ db/seeds.rb:27
   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:27
+Started GET "/cats/new" for ::1 at 2021-07-23 16:48:59 -0400
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/aminbabar/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ActionView::CompiledTemplates::COLORS:
+  app/views/cats/new.html.erb:25:in `_app_views_cats_new_html_erb___3546395113628839309_70164450233000'
+  app/controllers/cats_controller.rb:21:in `new'
+
+Started POST "/__better_errors/f9b381056a4a2b06/variables" for ::1 at 2021-07-23 16:48:59 -0400
+Started GET "/cats/new" for ::1 at 2021-07-23 16:49:02 -0400
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ActionView::CompiledTemplates::COLORS:
+  app/views/cats/new.html.erb:25:in `_app_views_cats_new_html_erb___3546395113628839309_70164448819360'
+  app/controllers/cats_controller.rb:21:in `new'
+
+Started POST "/__better_errors/16d6534245764ae0/variables" for ::1 at 2021-07-23 16:49:02 -0400
+Started GET "/cats/new" for ::1 at 2021-07-23 16:49:06 -0400
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant ActionView::CompiledTemplates::COLORS:
+  app/views/cats/new.html.erb:25:in `_app_views_cats_new_html_erb___3546395113628839309_70164450971940'
+  app/controllers/cats_controller.rb:21:in `new'
+
+Started POST "/__better_errors/2b6d6f551ca730e4/variables" for ::1 at 2021-07-23 16:49:06 -0400
+Started GET "/cats" for ::1 at 2021-07-23 16:49:06 -0400
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb within layouts/application
+  [1m[36mCat Load (2.1ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:4
+  Rendered cats/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 183ms (Views: 162.5ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/cats/new" for ::1 at 2021-07-23 16:49:09 -0400
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cats" for ::1 at 2021-07-23 16:49:18 -0400
+Processing by CatsController#create as HTML
+  Parameters: {"cat"=>{"name"=>"Amin", "sex"=>"M", "color"=>"gold", "birth_date"=>"2021-06-07", "description"=>"cat"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cats_controller.rb:27
+  [1m[36mCat Create (2.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2021-06-07"], ["color", "gold"], ["name", "Amin"], ["sex", "M"], ["description", "cat"], ["created_at", "2021-07-23 20:49:18.857977"], ["updated_at", "2021-07-23 20:49:18.857977"]]
+  ↳ app/controllers/cats_controller.rb:27
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cats_controller.rb:27
+Redirected to http://localhost:3000/cats/101
+Completed 302 Found in 8ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/cats/101" for ::1 at 2021-07-23 16:49:18 -0400
+Processing by CatsController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT  "cats".* FROM "cats" WHERE "cats"."id" = $1 LIMIT $2[0m  [["id", 101], ["LIMIT", 1]]
+  ↳ app/controllers/cats_controller.rb:11
+  Rendering cats/show.html.erb within layouts/application
+  Rendered cats/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.7ms)
+
+
