@@ -200,7 +200,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
-  x86_64-darwin-17
+  x86_64-darwin-20
 
 DEPENDENCIES
   better_errors
@@ -230,4 +230,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   2.2.23
+   2.2.22

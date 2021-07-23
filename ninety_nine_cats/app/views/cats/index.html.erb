@@ -1,10 +1,9 @@
 <h1>These are our Cats!!</h1>
 
-<% @cats.each do |cat| %>
     <ol>
-        <li>
-            <%= cat.name %>
-        </li>
+        <% @cats.each do |cat| %>
+            <li>
+                <%= cat.name %>
+            </li>
+        <% end %>
     </ol>
-
-<% end %>
