@@ -154,3 +154,652 @@ Processing by CatsController#index as HTML
 Completed 200 OK in 379ms (Views: 368.0ms | ActiveRecord: 9.9ms)
 
 
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mCat Load (1.3ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mCat Load (1.0ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mCat Create (73.9ms)[0m  [1m[32mINSERT INTO "cats" ("color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["color", "pink"], ["name", "Ed Venture"], ["sex", "F"], ["description", "Kale chips 3 wolf moon phlogiston whatever meditation tattooed kitsch muggle magic typewriter."], ["created_at", "2021-07-23 19:20:16.063222"], ["updated_at", "2021-07-23 19:20:16.063222"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mCat Load (1.1ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCat Create (27.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2020-02-04"], ["color", "gold"], ["name", "bob"], ["sex", "F"], ["description", "this is a nice cat"], ["created_at", "2021-07-23 19:25:57.907176"], ["updated_at", "2021-07-23 19:25:57.907176"]]
+  [1m[35m (14.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mCat Load (9.5ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCat Destroy (21.7ms)[0m  [1m[31mDELETE FROM "cats" WHERE "cats"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:9
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (14.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (2.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2003-06-09"], ["color", "pink"], ["name", "Bill Ding"], ["sex", "M"], ["description", "Chambray taxidermy messenger bag intelligentsia."], ["created_at", "2021-07-23 19:27:18.874388"], ["updated_at", "2021-07-23 19:27:18.874388"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (39.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mCat Load (1.4ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCat Destroy (1.6ms)[0m  [1m[31mDELETE FROM "cats" WHERE "cats"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:9
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (1.0ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1952-06-19"], ["color", "turquoise"], ["name", "Jan U. Wharry"], ["sex", "M"], ["description", "Actually yolo distillery farm-to-table carry microdosing normcore letterpress intelligentsia."], ["created_at", "2021-07-23 19:27:44.078661"], ["updated_at", "2021-07-23 19:27:44.078661"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (8.8ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1918-09-02"], ["color", "gold"], ["name", "Ima Lytle Teapot"], ["sex", "F"], ["description", "Flannel waistcoat normcore cornhole flexitarian tofu."], ["created_at", "2021-07-23 19:27:44.088164"], ["updated_at", "2021-07-23 19:27:44.088164"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (1.4ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1969-07-24"], ["color", "turquoise"], ["name", "Michelle Lynn"], ["sex", "M"], ["description", "Hashtag helvetica 3 wolf moon artisan."], ["created_at", "2021-07-23 19:27:44.107902"], ["updated_at", "2021-07-23 19:27:44.107902"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (1.1ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1923-10-18"], ["color", "scarlet"], ["name", "Ray Zenz"], ["sex", "M"], ["description", "Retro synth blog xoxo migas kickstarter distillery pbr&b."], ["created_at", "2021-07-23 19:27:44.119870"], ["updated_at", "2021-07-23 19:27:44.119870"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (4.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1901-08-19"], ["color", "purple"], ["name", "Colette A. Day"], ["sex", "M"], ["description", "Listicle fanny pack sustainable squid food truck."], ["created_at", "2021-07-23 19:27:44.135069"], ["updated_at", "2021-07-23 19:27:44.135069"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (5.0ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1989-03-23"], ["color", "pink"], ["name", "Eve O'Lution"], ["sex", "F"], ["description", "Deep v loko church-key twee tattooed."], ["created_at", "2021-07-23 19:27:44.142819"], ["updated_at", "2021-07-23 19:27:44.142819"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2014-11-21"], ["color", "scarlet"], ["name", "Annie Buddyhome"], ["sex", "M"], ["description", "Sartorial everyday jean shorts put a bird on it kogi stumptown."], ["created_at", "2021-07-23 19:27:44.154321"], ["updated_at", "2021-07-23 19:27:44.154321"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1911-02-05"], ["color", "turquoise"], ["name", "Winnie Dipoo"], ["sex", "F"], ["description", "Vice meditation cornhole raw denim crucifix."], ["created_at", "2021-07-23 19:27:44.161782"], ["updated_at", "2021-07-23 19:27:44.161782"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1928-05-17"], ["color", "turquoise"], ["name", "Sonny Day"], ["sex", "M"], ["description", "Tumblr aesthetic selfies semiotics kale chips."], ["created_at", "2021-07-23 19:27:44.167821"], ["updated_at", "2021-07-23 19:27:44.167821"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (1.3ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2017-06-05"], ["color", "pink"], ["name", "Jean Poole"], ["sex", "F"], ["description", "Humblebrag food truck celiac gluten-free."], ["created_at", "2021-07-23 19:27:44.173684"], ["updated_at", "2021-07-23 19:27:44.173684"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2013-05-15"], ["color", "gold"], ["name", "Duane Pipe"], ["sex", "M"], ["description", "Seitan health keytar mumblecore messenger bag fingerstache yolo 3 wolf moon intelligentsia."], ["created_at", "2021-07-23 19:27:44.180422"], ["updated_at", "2021-07-23 19:27:44.180422"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1906-04-14"], ["color", "black"], ["name", "Father A. Long"], ["sex", "F"], ["description", "Keffiyeh viral quinoa sartorial cray."], ["created_at", "2021-07-23 19:27:44.186713"], ["updated_at", "2021-07-23 19:27:44.186713"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.7ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1959-05-26"], ["color", "green"], ["name", "Louise E. Anna"], ["sex", "M"], ["description", "Post-ironic kale chips forage skateboard selfies pbr&b blue bottle."], ["created_at", "2021-07-23 19:27:44.197272"], ["updated_at", "2021-07-23 19:27:44.197272"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.7ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1974-05-18"], ["color", "scarlet"], ["name", "Tom Katz"], ["sex", "M"], ["description", "Freegan bespoke godard pabst austin kickstarter."], ["created_at", "2021-07-23 19:27:44.203384"], ["updated_at", "2021-07-23 19:27:44.203384"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1991-01-10"], ["color", "purple"], ["name", "Barb E. Dahl"], ["sex", "F"], ["description", "Fixie thundercats kogi meh banjo."], ["created_at", "2021-07-23 19:27:44.213891"], ["updated_at", "2021-07-23 19:27:44.213891"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1973-08-07"], ["color", "pink"], ["name", "C. Worthy"], ["sex", "M"], ["description", "Carry pitchfork normcore green juice gluten-free."], ["created_at", "2021-07-23 19:27:44.220012"], ["updated_at", "2021-07-23 19:27:44.220012"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (3.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1934-10-21"], ["color", "turquoise"], ["name", "Jaqueline Hyde"], ["sex", "M"], ["description", "Pork belly irony dreamcatcher hoodie."], ["created_at", "2021-07-23 19:27:44.227472"], ["updated_at", "2021-07-23 19:27:44.227472"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.9ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1950-03-07"], ["color", "gold"], ["name", "Ann Tartica"], ["sex", "F"], ["description", "Yuccie offal meh sriracha helvetica raw denim austin chia banjo."], ["created_at", "2021-07-23 19:27:44.240506"], ["updated_at", "2021-07-23 19:27:44.240506"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1978-04-04"], ["color", "pink"], ["name", "Max Power"], ["sex", "F"], ["description", "Kitsch scenester brooklyn ramps shoreditch mlkshk pop-up."], ["created_at", "2021-07-23 19:27:44.248071"], ["updated_at", "2021-07-23 19:27:44.248071"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1914-06-25"], ["color", "green"], ["name", "Mel Function"], ["sex", "F"], ["description", "Vegan polaroid paleo letterpress sartorial marfa."], ["created_at", "2021-07-23 19:27:44.253167"], ["updated_at", "2021-07-23 19:27:44.253167"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1982-01-19"], ["color", "pink"], ["name", "Sally Mander"], ["sex", "M"], ["description", "Yuccie selfies truffaut aesthetic kombucha."], ["created_at", "2021-07-23 19:27:44.258379"], ["updated_at", "2021-07-23 19:27:44.258379"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1986-04-18"], ["color", "gold"], ["name", "Dan Druff"], ["sex", "F"], ["description", "Twee occupy salvia hella neutra gluten-free etsy echo."], ["created_at", "2021-07-23 19:27:44.263903"], ["updated_at", "2021-07-23 19:27:44.263903"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1951-01-18"], ["color", "black"], ["name", "Bo D. Satva"], ["sex", "M"], ["description", "Austin photo booth salvia seitan polaroid."], ["created_at", "2021-07-23 19:27:44.272475"], ["updated_at", "2021-07-23 19:27:44.272475"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1964-05-07"], ["color", "pink"], ["name", "Harry R. M. Pitts"], ["sex", "F"], ["description", "Paleo kickstarter pop-up trust fund lomo vinegar."], ["created_at", "2021-07-23 19:27:44.278794"], ["updated_at", "2021-07-23 19:27:44.278794"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1953-03-12"], ["color", "green"], ["name", "Carl Arm"], ["sex", "M"], ["description", "Distillery yr intelligentsia swag sartorial pork belly meditation."], ["created_at", "2021-07-23 19:27:44.285277"], ["updated_at", "2021-07-23 19:27:44.285277"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.7ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1967-10-14"], ["color", "turquoise"], ["name", "Ann B. Dextrous"], ["sex", "F"], ["description", "Pinterest selfies hammock drinking."], ["created_at", "2021-07-23 19:27:44.294060"], ["updated_at", "2021-07-23 19:27:44.294060"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1904-03-22"], ["color", "gold"], ["name", "Joy Rider"], ["sex", "M"], ["description", "Pop-up put a bird on it pinterest thundercats lumbersexual fingerstache jean shorts lo-fi."], ["created_at", "2021-07-23 19:27:44.311950"], ["updated_at", "2021-07-23 19:27:44.311950"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.7ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2019-11-03"], ["color", "scarlet"], ["name", "Tommy Hawk"], ["sex", "F"], ["description", "Park hashtag put a bird on it wolf gluten-free master helvetica kickstarter literally."], ["created_at", "2021-07-23 19:27:44.320788"], ["updated_at", "2021-07-23 19:27:44.320788"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.7ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1934-11-18"], ["color", "purple"], ["name", "Brook Lynn Bridge"], ["sex", "F"], ["description", "Green juice scenester helvetica franzen."], ["created_at", "2021-07-23 19:27:44.330215"], ["updated_at", "2021-07-23 19:27:44.330215"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (4.0ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2017-04-05"], ["color", "turquoise"], ["name", "Ilene Dover"], ["sex", "F"], ["description", "Sustainable portland keffiyeh jean shorts quinoa wes anderson."], ["created_at", "2021-07-23 19:27:44.337866"], ["updated_at", "2021-07-23 19:27:44.337866"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1950-11-13"], ["color", "pink"], ["name", "Dan Saul Knight"], ["sex", "F"], ["description", "Poutine plaid raw denim art party wolf direct trade iphone cornhole."], ["created_at", "2021-07-23 19:27:44.349116"], ["updated_at", "2021-07-23 19:27:44.349116"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.7ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1981-03-24"], ["color", "black"], ["name", "Pearl E. Whites"], ["sex", "M"], ["description", "Marfa yolo lomo tumblr scenester poutine food truck keffiyeh fingerstache."], ["created_at", "2021-07-23 19:27:44.354294"], ["updated_at", "2021-07-23 19:27:44.354294"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1968-11-13"], ["color", "green"], ["name", "Sandy Banks"], ["sex", "F"], ["description", "Food truck beard authentic irony."], ["created_at", "2021-07-23 19:27:44.359989"], ["updated_at", "2021-07-23 19:27:44.359989"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.7ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1900-08-21"], ["color", "turquoise"], ["name", "June Bugg"], ["sex", "M"], ["description", "Synth viral swag kitsch disrupt."], ["created_at", "2021-07-23 19:27:44.369658"], ["updated_at", "2021-07-23 19:27:44.369658"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.9ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1975-11-05"], ["color", "black"], ["name", "Anne Teak"], ["sex", "M"], ["description", "Mlkshk paleo yolo church-key master franzen humblebrag photo booth ennui."], ["created_at", "2021-07-23 19:27:44.375457"], ["updated_at", "2021-07-23 19:27:44.375457"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1956-12-28"], ["color", "turquoise"], ["name", "Frank N. Stein"], ["sex", "M"], ["description", "You probably haven't heard of them vinyl vinegar tattooed kale chips."], ["created_at", "2021-07-23 19:27:44.388723"], ["updated_at", "2021-07-23 19:27:44.388723"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (1.0ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1914-06-11"], ["color", "purple"], ["name", "Morey Bund"], ["sex", "M"], ["description", "Xoxo sustainable bitters vinegar poutine authentic."], ["created_at", "2021-07-23 19:27:44.396820"], ["updated_at", "2021-07-23 19:27:44.396820"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.9ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1929-12-27"], ["color", "green"], ["name", "Crystal Glass"], ["sex", "F"], ["description", "Yolo lo-fi keffiyeh marfa post-ironic."], ["created_at", "2021-07-23 19:27:44.405668"], ["updated_at", "2021-07-23 19:27:44.405668"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1918-10-02"], ["color", "gold"], ["name", "Rocky Shore"], ["sex", "F"], ["description", "Ugh beard cred drinking health occupy."], ["created_at", "2021-07-23 19:27:44.412705"], ["updated_at", "2021-07-23 19:27:44.412705"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.9ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1977-11-11"], ["color", "black"], ["name", "Evans Gayte"], ["sex", "M"], ["description", "Shoreditch knausgaard kickstarter literally."], ["created_at", "2021-07-23 19:27:44.418334"], ["updated_at", "2021-07-23 19:27:44.418334"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1972-10-14"], ["color", "scarlet"], ["name", "Maurice Minor"], ["sex", "F"], ["description", "Pour-over everyday photo booth trust fund actually stumptown squid."], ["created_at", "2021-07-23 19:27:44.424778"], ["updated_at", "2021-07-23 19:27:44.424778"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.7ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1911-06-13"], ["color", "gold"], ["name", "Walter Melon"], ["sex", "M"], ["description", "Small batch banh mi portland pabst goth sriracha park godard."], ["created_at", "2021-07-23 19:27:44.435208"], ["updated_at", "2021-07-23 19:27:44.435208"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (1.8ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1933-01-07"], ["color", "turquoise"], ["name", "Harry Beard"], ["sex", "F"], ["description", "Hoodie stumptown jean shorts 3 wolf moon."], ["created_at", "2021-07-23 19:27:44.440829"], ["updated_at", "2021-07-23 19:27:44.440829"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1959-04-23"], ["color", "green"], ["name", "Al O'Moaney"], ["sex", "F"], ["description", "Pitchfork master godard intelligentsia distillery wolf xoxo tote bag offal."], ["created_at", "2021-07-23 19:27:44.447697"], ["updated_at", "2021-07-23 19:27:44.447697"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1944-07-02"], ["color", "black"], ["name", "Warren T."], ["sex", "F"], ["description", "Deep v tacos +1 whatever bitters tofu aesthetic direct trade retro."], ["created_at", "2021-07-23 19:27:44.452856"], ["updated_at", "2021-07-23 19:27:44.452856"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (9.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1952-01-21"], ["color", "pink"], ["name", "Bea Sting"], ["sex", "M"], ["description", "Kickstarter salvia microdosing knausgaard narwhal tofu shoreditch yr seitan."], ["created_at", "2021-07-23 19:27:44.463017"], ["updated_at", "2021-07-23 19:27:44.463017"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1960-04-12"], ["color", "pink"], ["name", "Adam Meway"], ["sex", "M"], ["description", "Chicharrones five dollar toast readymade shabby chic leggings aesthetic tofu taxidermy."], ["created_at", "2021-07-23 19:27:44.477241"], ["updated_at", "2021-07-23 19:27:44.477241"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (1.8ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2006-06-02"], ["color", "green"], ["name", "Beau Vine"], ["sex", "F"], ["description", "Kitsch bushwick phlogiston readymade dreamcatcher."], ["created_at", "2021-07-23 19:27:44.482695"], ["updated_at", "2021-07-23 19:27:44.482695"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (3.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1900-12-16"], ["color", "pink"], ["name", "Rusty Blades"], ["sex", "F"], ["description", "Tilde freegan direct trade mustache hoodie cliche."], ["created_at", "2021-07-23 19:27:44.491439"], ["updated_at", "2021-07-23 19:27:44.491439"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (1.7ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1990-04-15"], ["color", "gold"], ["name", "Ben Thair"], ["sex", "F"], ["description", "Neutra 8-bit seitan hammock xoxo plaid pickled butcher raw denim."], ["created_at", "2021-07-23 19:27:44.503365"], ["updated_at", "2021-07-23 19:27:44.503365"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1963-05-01"], ["color", "turquoise"], ["name", "Pepe C. Cola"], ["sex", "F"], ["description", "Diy vice asymmetrical knausgaard blog tacos."], ["created_at", "2021-07-23 19:27:44.511630"], ["updated_at", "2021-07-23 19:27:44.511630"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1994-04-19"], ["color", "scarlet"], ["name", "Jade Stone"], ["sex", "M"], ["description", "Green juice lumbersexual small batch listicle keytar church-key wes anderson."], ["created_at", "2021-07-23 19:27:44.516841"], ["updated_at", "2021-07-23 19:27:44.516841"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2013-07-20"], ["color", "gold"], ["name", "Mark Z. Spot"], ["sex", "F"], ["description", "Blog bitters gastropub humblebrag blue bottle paleo chillwave banjo salvia."], ["created_at", "2021-07-23 19:27:44.522316"], ["updated_at", "2021-07-23 19:27:44.522316"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1948-05-12"], ["color", "black"], ["name", "Nick L. Andime"], ["sex", "F"], ["description", "Vinegar ugh authentic aesthetic actually xoxo fingerstache."], ["created_at", "2021-07-23 19:27:44.527464"], ["updated_at", "2021-07-23 19:27:44.527464"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.8ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1998-10-01"], ["color", "scarlet"], ["name", "Milly Meter"], ["sex", "F"], ["description", "Meggings letterpress cronut typewriter keffiyeh shabby chic vinegar."], ["created_at", "2021-07-23 19:27:44.536056"], ["updated_at", "2021-07-23 19:27:44.536056"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2016-01-08"], ["color", "green"], ["name", "Xavier Money"], ["sex", "F"], ["description", "Try-hard five dollar toast kitsch portland pop-up."], ["created_at", "2021-07-23 19:27:44.549569"], ["updated_at", "2021-07-23 19:27:44.549569"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1981-08-15"], ["color", "turquoise"], ["name", "Adam Meway"], ["sex", "M"], ["description", "Polaroid echo tilde typewriter fashion axe wayfarers."], ["created_at", "2021-07-23 19:27:44.555219"], ["updated_at", "2021-07-23 19:27:44.555219"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (1.2ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1993-02-18"], ["color", "scarlet"], ["name", "Cammie Sole"], ["sex", "F"], ["description", "Trust fund loko 8-bit kitsch yolo umami."], ["created_at", "2021-07-23 19:27:44.567030"], ["updated_at", "2021-07-23 19:27:44.567030"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1919-08-19"], ["color", "green"], ["name", "Dan Geruss"], ["sex", "M"], ["description", "Brunch ugh crucifix banh mi banjo typewriter."], ["created_at", "2021-07-23 19:27:44.572945"], ["updated_at", "2021-07-23 19:27:44.572945"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (2.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1998-09-20"], ["color", "turquoise"], ["name", "Brandon Cattell"], ["sex", "F"], ["description", "Salvia marfa austin typewriter street."], ["created_at", "2021-07-23 19:27:44.578894"], ["updated_at", "2021-07-23 19:27:44.578894"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1983-12-02"], ["color", "gold"], ["name", "Sandy Spring"], ["sex", "M"], ["description", "Bitters listicle fingerstache readymade muggle magic skateboard meh carry."], ["created_at", "2021-07-23 19:27:44.587140"], ["updated_at", "2021-07-23 19:27:44.587140"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.7ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1985-01-04"], ["color", "green"], ["name", "Hal Jalikakick"], ["sex", "M"], ["description", "Keffiyeh portland selvage hoodie raw denim hashtag artisan."], ["created_at", "2021-07-23 19:27:44.594139"], ["updated_at", "2021-07-23 19:27:44.594139"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1958-03-03"], ["color", "scarlet"], ["name", "Candy Kane"], ["sex", "M"], ["description", "Blog cliche mlkshk slow-carb scenester crucifix brunch put a bird on it lumbersexual."], ["created_at", "2021-07-23 19:27:44.599166"], ["updated_at", "2021-07-23 19:27:44.599166"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.9ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1914-08-17"], ["color", "green"], ["name", "Barb E. Cue"], ["sex", "M"], ["description", "Fixie thundercats lumbersexual street flannel disrupt chicharrones."], ["created_at", "2021-07-23 19:27:44.605899"], ["updated_at", "2021-07-23 19:27:44.605899"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1907-09-09"], ["color", "green"], ["name", "Ben Dover"], ["sex", "F"], ["description", "You probably haven't heard of them cleanse mlkshk brunch small batch chartreuse single-origin coffee."], ["created_at", "2021-07-23 19:27:44.612716"], ["updated_at", "2021-07-23 19:27:44.612716"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.8ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2004-08-09"], ["color", "purple"], ["name", "Laura Norder"], ["sex", "F"], ["description", "Leggings five dollar toast brooklyn drinking etsy."], ["created_at", "2021-07-23 19:27:44.619932"], ["updated_at", "2021-07-23 19:27:44.619932"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1902-04-19"], ["color", "purple"], ["name", "Quimby Ingmeen"], ["sex", "F"], ["description", "Helvetica brunch park 90's photo booth quinoa echo trust fund."], ["created_at", "2021-07-23 19:27:44.626824"], ["updated_at", "2021-07-23 19:27:44.626824"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1951-08-09"], ["color", "green"], ["name", "Bob Inforapples"], ["sex", "F"], ["description", "Sartorial scenester goth sriracha single-origin coffee."], ["created_at", "2021-07-23 19:27:44.636018"], ["updated_at", "2021-07-23 19:27:44.636018"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (1.7ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1931-12-11"], ["color", "black"], ["name", "Rich Kidd"], ["sex", "M"], ["description", "Health viral vinyl poutine wes anderson distillery yr fingerstache."], ["created_at", "2021-07-23 19:27:44.642839"], ["updated_at", "2021-07-23 19:27:44.642839"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.7ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1972-09-26"], ["color", "purple"], ["name", "Bea Minor"], ["sex", "M"], ["description", "Organic literally photo booth meditation goth fingerstache +1 brooklyn."], ["created_at", "2021-07-23 19:27:44.651406"], ["updated_at", "2021-07-23 19:27:44.651406"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.9ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1910-10-11"], ["color", "black"], ["name", "Ginger Rayl"], ["sex", "M"], ["description", "8-bit venmo wayfarers before they sold out."], ["created_at", "2021-07-23 19:27:44.657687"], ["updated_at", "2021-07-23 19:27:44.657687"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (12.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.7ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1989-01-12"], ["color", "turquoise"], ["name", "Roman Holiday"], ["sex", "M"], ["description", "Austin phlogiston chia mixtape waistcoat green juice neutra hoodie."], ["created_at", "2021-07-23 19:27:44.673904"], ["updated_at", "2021-07-23 19:27:44.673904"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1979-12-26"], ["color", "green"], ["name", "Ginger Vitis"], ["sex", "F"], ["description", "Photo booth twee ugh migas kale chips asymmetrical."], ["created_at", "2021-07-23 19:27:44.679234"], ["updated_at", "2021-07-23 19:27:44.679234"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1955-01-02"], ["color", "gold"], ["name", "Adam Baum"], ["sex", "M"], ["description", "Retro master dreamcatcher blog diy flannel."], ["created_at", "2021-07-23 19:27:44.686670"], ["updated_at", "2021-07-23 19:27:44.686670"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (1.3ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2009-06-07"], ["color", "pink"], ["name", "Wanda Rinn"], ["sex", "F"], ["description", "Yuccie kombucha mixtape five dollar toast."], ["created_at", "2021-07-23 19:27:44.692481"], ["updated_at", "2021-07-23 19:27:44.692481"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1924-06-16"], ["color", "black"], ["name", "Nick O'Teen"], ["sex", "F"], ["description", "Pickled pinterest ennui keytar."], ["created_at", "2021-07-23 19:27:44.710294"], ["updated_at", "2021-07-23 19:27:44.710294"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.7ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2001-09-25"], ["color", "purple"], ["name", "I. Lasch"], ["sex", "F"], ["description", "Godard beard fingerstache whatever cleanse keffiyeh brunch meh phlogiston."], ["created_at", "2021-07-23 19:27:44.716558"], ["updated_at", "2021-07-23 19:27:44.716558"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (1.4ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1977-04-13"], ["color", "purple"], ["name", "Bob Frapples"], ["sex", "F"], ["description", "Next level swag tumblr pabst tilde polaroid cold-pressed."], ["created_at", "2021-07-23 19:27:44.722740"], ["updated_at", "2021-07-23 19:27:44.722740"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (1.4ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1980-03-03"], ["color", "green"], ["name", "Jade Stone"], ["sex", "M"], ["description", "Freegan disrupt green juice readymade scenester ugh taxidermy."], ["created_at", "2021-07-23 19:27:44.736364"], ["updated_at", "2021-07-23 19:27:44.736364"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (1.0ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2005-11-08"], ["color", "scarlet"], ["name", "Lou Dan Obseen"], ["sex", "M"], ["description", "Pug cray tousled celiac."], ["created_at", "2021-07-23 19:27:44.746678"], ["updated_at", "2021-07-23 19:27:44.746678"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1931-01-16"], ["color", "black"], ["name", "Samson Night"], ["sex", "M"], ["description", "Tote bag organic irony stumptown kickstarter typewriter polaroid."], ["created_at", "2021-07-23 19:27:44.752434"], ["updated_at", "2021-07-23 19:27:44.752434"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.7ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1925-06-06"], ["color", "turquoise"], ["name", "May O'Nays"], ["sex", "F"], ["description", "Goth fashion axe tacos messenger bag tousled."], ["created_at", "2021-07-23 19:27:44.757724"], ["updated_at", "2021-07-23 19:27:44.757724"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1920-02-20"], ["color", "purple"], ["name", "Penny Whistler"], ["sex", "F"], ["description", "Cliche mlkshk keffiyeh hammock."], ["created_at", "2021-07-23 19:27:44.765301"], ["updated_at", "2021-07-23 19:27:44.765301"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (2.1ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1924-12-16"], ["color", "scarlet"], ["name", "Ilene Dover"], ["sex", "F"], ["description", "Chia beard squid leggings."], ["created_at", "2021-07-23 19:27:44.774769"], ["updated_at", "2021-07-23 19:27:44.774769"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (3.0ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1995-05-15"], ["color", "gold"], ["name", "Russell Sprout"], ["sex", "F"], ["description", "Fashion axe schlitz neutra listicle celiac cronut taxidermy forage heirloom."], ["created_at", "2021-07-23 19:27:44.782056"], ["updated_at", "2021-07-23 19:27:44.782056"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1933-07-25"], ["color", "gold"], ["name", "Pepe C. Cola"], ["sex", "F"], ["description", "Drinking chicharrones skateboard vhs semiotics."], ["created_at", "2021-07-23 19:27:44.791623"], ["updated_at", "2021-07-23 19:27:44.791623"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1972-01-06"], ["color", "green"], ["name", "Cole Kutz"], ["sex", "M"], ["description", "Lomo kombucha gentrify venmo yr waistcoat squid."], ["created_at", "2021-07-23 19:27:44.797181"], ["updated_at", "2021-07-23 19:27:44.797181"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1984-08-10"], ["color", "pink"], ["name", "Dan Saul Knight"], ["sex", "F"], ["description", "Viral retro tilde lumbersexual."], ["created_at", "2021-07-23 19:27:44.802005"], ["updated_at", "2021-07-23 19:27:44.802005"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (1.1ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1931-03-19"], ["color", "black"], ["name", "Joe Czarfunee"], ["sex", "F"], ["description", "Crucifix xoxo lo-fi tattooed."], ["created_at", "2021-07-23 19:27:44.809530"], ["updated_at", "2021-07-23 19:27:44.809530"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1976-04-24"], ["color", "turquoise"], ["name", "Carrie A. Tune"], ["sex", "M"], ["description", "Cronut carry tousled you probably haven't heard of them drinking asymmetrical yuccie put a bird on it."], ["created_at", "2021-07-23 19:27:44.818091"], ["updated_at", "2021-07-23 19:27:44.818091"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (1.0ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1972-04-03"], ["color", "gold"], ["name", "Barry D. Hatchett"], ["sex", "F"], ["description", "Banh mi trust fund cred umami biodiesel iphone vhs."], ["created_at", "2021-07-23 19:27:44.823803"], ["updated_at", "2021-07-23 19:27:44.823803"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2001-10-08"], ["color", "purple"], ["name", "Dee Sember"], ["sex", "M"], ["description", "Tumblr gastropub chia you probably haven't heard of them."], ["created_at", "2021-07-23 19:27:44.833706"], ["updated_at", "2021-07-23 19:27:44.833706"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.7ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1948-01-28"], ["color", "scarlet"], ["name", "Rusty Irons"], ["sex", "M"], ["description", "Cornhole forage kombucha stumptown selvage direct trade tumblr swag 8-bit."], ["created_at", "2021-07-23 19:27:44.838889"], ["updated_at", "2021-07-23 19:27:44.838889"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.6ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1917-06-14"], ["color", "gold"], ["name", "Seymour Legg"], ["sex", "F"], ["description", "Venmo leggings viral pickled crucifix master."], ["created_at", "2021-07-23 19:27:44.846399"], ["updated_at", "2021-07-23 19:27:44.846399"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1957-04-24"], ["color", "turquoise"], ["name", "Sherman Wadd Evver"], ["sex", "M"], ["description", "Chia hashtag pinterest photo booth slow-carb."], ["created_at", "2021-07-23 19:27:44.851965"], ["updated_at", "2021-07-23 19:27:44.851965"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (1.0ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1957-10-01"], ["color", "black"], ["name", "Theresa Green"], ["sex", "M"], ["description", "Try-hard humblebrag disrupt pour-over godard."], ["created_at", "2021-07-23 19:27:44.857084"], ["updated_at", "2021-07-23 19:27:44.857084"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (10.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1924-11-27"], ["color", "turquoise"], ["name", "I. Pullem"], ["sex", "F"], ["description", "Biodiesel godard sriracha pour-over sustainable tote bag venmo retro synth."], ["created_at", "2021-07-23 19:27:44.873560"], ["updated_at", "2021-07-23 19:27:44.873560"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1923-10-06"], ["color", "scarlet"], ["name", "Rip Torn"], ["sex", "M"], ["description", "Cold-pressed pop-up pug mustache."], ["created_at", "2021-07-23 19:27:44.880775"], ["updated_at", "2021-07-23 19:27:44.880775"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1903-01-05"], ["color", "pink"], ["name", "Joe Czarfunee"], ["sex", "F"], ["description", "Selfies cronut selvage brunch taxidermy dreamcatcher."], ["created_at", "2021-07-23 19:27:44.887761"], ["updated_at", "2021-07-23 19:27:44.887761"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mCat Create (0.5ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "1918-05-04"], ["color", "pink"], ["name", "Penny Bunn"], ["sex", "F"], ["description", "Cred chicharrones waistcoat forage."], ["created_at", "2021-07-23 19:27:44.895551"], ["updated_at", "2021-07-23 19:27:44.895551"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
